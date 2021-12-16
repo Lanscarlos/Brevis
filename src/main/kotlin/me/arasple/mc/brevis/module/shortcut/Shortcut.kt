@@ -8,7 +8,15 @@ import java.util.concurrent.CompletableFuture
  * @author Arasple
  * @date 2021/2/25 11:44
  */
-data class Shortcut(val courses: List<Track>, private val reaction: String) {
+data class Shortcut(
+    val global: Boolean = false,
+    val courses: List<Track>,
+    private val reaction: String
+) {
+
+    fun isGlobal(): Boolean {
+        return global
+    }
 
     fun match(tracks: List<Track>): Boolean {
         if (tracks.size != courses.size) {

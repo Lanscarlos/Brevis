@@ -1,0 +1,7 @@
+Plugin:
+  UnsupportedVersion: '&8[&aBrevis&8] &cERROR &8| &cPlugin does not support this outdated Minecraft version'
+  Loading: '&8[&aBrevis&8] &bINFO &8| &7Loading... &f{0}'
+  Enabled: '&8[&aBrevis&8] &bINFO &8| &3Plugin has been enabled. Currently running version &2{0}&7.'
+
+Shortcut:
+  Loaded: '&8[&aBrevis&8] &aFINE &8| &a{0} &3shortcuts were loaded &8({1} ms)'

@@ -1,0 +1,19 @@
+name: Brevis
+main: me.arasple.mc.brevis.boot.PluginBoot
+
+author: Arasple
+
+api-version: 1.13
+version: 1.0-SNAPSHOT
+
+lib-version: 5.55
+lib-download: true
+loader-version: 2.12
+
+description: Advanced shortcuts
+
+softdepend: [ PlaceholderAPI ]
+
+built-time: 2021-12-16 14:47:44
+built-by: Lanscarlos
+built-os: Windows 10amd6410.0

@@ -35,14 +35,14 @@ class Session(private val holder: Player, private val tracks: MutableList<Track>
         var matched = false
         Performance.check("Brevis:Handler:Check") {
             Settings.INSTANCE.shortcuts
-                .filter { it.match(tracks.takeLast(it.courses.size)) }
+                .filter { (it.value.isGlobal() || holder.hasPermission("brevis.shortcut." + it.key)) && it.value.match(tracks.takeLast(it.value.courses.size)) }
                 .run {
                     if (isNotEmpty()) {
                         matched = true
                         tracks.clear()
                         forEach { track ->
                             // TODO INTERRUPT
-                            track.react(holder)
+                            track.value.react(holder)
                         }
                     }
                 }

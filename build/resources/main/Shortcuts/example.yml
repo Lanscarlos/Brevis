@@ -1,0 +1,16 @@
+# 自定义快捷方式 ID
+helloWorld:
+  # 蹲下并在 0.85secs 内切换副手（Shift+F）触发
+  courses:
+    - Sneaking
+    - Offhand;850
+  reaction: |-
+    tell inline *"Hello World {{player name}}"
+
+shift_1:
+  # 蹲下并在 1.00secs 内按数字键 1
+  courses:
+    - Sneaking
+    - Swap-1;1000
+  reaction:
+    - 'title *SHIFT_1 by 20 10 20'
